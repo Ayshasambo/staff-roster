@@ -5,6 +5,7 @@ node_modules/
 .env.local
 .env.*
 !.env.example
+!.env.production
 
 # Build output
 dist/
