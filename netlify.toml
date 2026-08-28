@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://staff-roster-3jlx.onrender.com/api/:splat"
+  status = 200
+  force = true
