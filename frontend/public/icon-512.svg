@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="greenGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#greenGrad512)" />
+  <rect x="64" y="112" width="384" height="304" rx="36" fill="#ffffff" />
+  <path d="M64 148 C64 128 80 112 100 112 L412 112 C432 112 448 128 448 148 L448 184 L64 184 Z" fill="#ecfdf5" />
+  <rect x="140" y="80" width="32" height="64" rx="16" fill="#047857" />
+  <rect x="340" y="80" width="32" height="64" rx="16" fill="#047857" />
+  <circle cx="190" cy="270" r="40" fill="#10b981" />
+  <path d="M176 270 L186 280 L204 262" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="322" cy="270" r="40" fill="#059669" />
+  <path d="M308 270 L318 280 L336 262" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M150 360 C150 336 170 324 190 324 C210 324 230 336 230 360" stroke="#10b981" stroke-width="12" stroke-linecap="round" />
+  <path d="M282 360 C282 336 302 324 322 324 C342 324 362 336 362 360" stroke="#059669" stroke-width="12" stroke-linecap="round" />
+</svg>

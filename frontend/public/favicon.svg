@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#059669" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#greenGrad)" />
+  <g transform="translate(96, 96)" filter="url(#shadow)">
+    <!-- Calendar Card Background -->
+    <rect x="16" y="48" width="288" height="240" rx="32" fill="#ffffff" />
+    <!-- Calendar Header Stripe -->
+    <path d="M16 80 C16 62.3 30.3 48 48 48 L272 48 C289.7 48 304 62.3 304 80 L304 112 L16 112 Z" fill="#ecfdf5" />
+    <!-- Calendar Binder Rings -->
+    <rect x="80" y="24" width="24" height="48" rx="12" fill="#047857" />
+    <rect x="216" y="24" width="24" height="48" rx="12" fill="#047857" />
+    <!-- Checkmark / Staff Icon Inside -->
+    <circle cx="112" cy="184" r="28" fill="#10b981" />
+    <path d="M102 184 L109 191 L122 178" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <circle cx="208" cy="184" r="28" fill="#059669" />
+    <path d="M198 184 L205 191 L218 178" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- User Group Base -->
+    <path d="M84 244 C84 228 100 220 112 220 C124 220 140 228 140 244" stroke="#10b981" stroke-width="8" stroke-linecap="round" />
+    <path d="M180 244 C180 228 196 220 208 220 C220 220 236 228 236 244" stroke="#059669" stroke-width="8" stroke-linecap="round" />
+  </g>
+</svg>

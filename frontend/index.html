@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Staff Roster | Shift & Leave Management</title>
+    <meta name="description" content="Automated staff scheduling, shift pairing, and leave management progressive web app." />
+    
+    <!-- PWA & Mobile Capabilities -->
+    <meta name="theme-color" content="#059669" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="StaffRoster" />
+    
+    <!-- Web App Manifest & Icons -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- App Root Container -->
+    <div id="app" class="app-container">
+      <!-- Offline Banner -->
+      <div id="offline-banner" class="offline-banner" style="display: none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="1" y1="1" x2="23" y2="23"></line>
+          <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+          <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+          <path d="M10.71 5.05A16 16 0 0 1 22.56 9"></path>
+          <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+          <line x1="12" y1="20" x2="12.01" y2="20"></line>
+        </svg>
+        <span>You are currently offline. Viewing cached roster data.</span>
+      </div>
+
+      <!-- Navigation Header -->
+      <header id="navbar" class="navbar"></header>
+
+      <!-- Main Content Area -->
+      <main id="main-content" class="main-content">
+        <!-- Toast Container -->
+        <div id="toast-container" class="toast-container"></div>
+        
+        <!-- Active View -->
+        <div id="view-container"></div>
+      </main>
+
+      <!-- Mobile Bottom Navigation -->
+      <nav id="bottom-nav" class="mobile-bottom-nav"></nav>
+
+      <!-- Modal Container -->
+      <div id="modal-container"></div>
+    </div>
+
+    <!-- App JavaScript -->
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>
