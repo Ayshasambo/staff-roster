@@ -1,5 +1,6 @@
 //const API_BASE = '/api';
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || '/api';
 
 async function request(endpoint, options = {}) {
   const url = `${API_BASE}${endpoint}`;
@@ -37,6 +38,25 @@ async function request(endpoint, options = {}) {
 }
 
 export const api = {
+  auth: {
+    login: (phonenumber, pin) => request('/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({
+        phonenumber,
+        pin
+      }),
+    }),
+
+    me: () => request('/auth/me'),
+
+    changePin: (currentPin, newPin) => request('/auth/change-pin', {
+      method: 'PATCH',
+      body: JSON.stringify({
+        currentPin,
+        newPin
+      }),
+    }),
+  },
   // Staff Endpoints
   staff: {
     getActive: () => request('/staff'),
