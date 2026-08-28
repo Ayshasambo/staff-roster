@@ -30,6 +30,11 @@ app.use('/api/staff', staffRoutes);
 app.use('/api/leaves', leaveRoutes);
 app.use('/api/rosters', rosterRoutes);
 
+app.use(cors({
+    origin: 'https://admin-staff-roster.netlify.app'
+}));
+
+
 // Health check endpoint
 app.get('/health', (req, res) => {
     res.json({ status: 'ok', time: new Date() });
