@@ -7,7 +7,7 @@ const { generateRosterForMonth, buildPairHistory } = require('../utils/rosterRul
 const { authenticate, requireAdmin } = require('../middleware/auth');
 
 // GET all monthly rosters
-router.get('/', async (req, res) => {
+router.get('/', authenticate, async (req, res) => {
     try {
         const rosters = await Roster.find({})
             .populate('shifts.assignedStaff', 'name phonenumber leaveBalance active role')
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 
 
 // GET roster for a specific month
-router.get('/:year/:month', async (req, res) => {
+router.get('/:year/:month', authenticate, async (req, res) => {
     try {
         const { year, month } = req.params;
 
